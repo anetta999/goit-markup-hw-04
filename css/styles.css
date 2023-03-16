@@ -210,10 +210,11 @@ body {
   background-color: var(--accent-color);
 }
 
-/** ------- What are we doing, Our team H2-HEADING------- */
+/** ------- What are we doing, Our team, Customers H2-HEADING------- */
 
 .services-heading,
-.team-heading {
+.team-heading,
+.customers-heading {
   color: var(--headings-color);
 
   font-size: 36px;
@@ -238,6 +239,7 @@ body {
   width: calc((100% - 24px * 3) / 4);
 }
 .values-list-heading {
+  margin-top: 8px;
   margin-bottom: 8px;
 
   color: var(--headings-color);
@@ -250,6 +252,16 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+
+  background-color: #f4f4fd;
 }
 
 /** ------SERVICES------ */
@@ -340,11 +352,48 @@ body {
 
   background-color: #4d5ae5;
 }
-.team-soc-icon {
-  fill: #f4f4fd;
-}
-.team-soc-link:hover {
+
+.team-soc-link:is(:hover, :focus) {
   background-color: var(--accent-color);
+}
+
+/**--------CUSTOMERS-------- */
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-heading {
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-list-item {
+  width: 168px;
+  height: 88px;
+}
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.customers-icon {
+  fill: #8e8f99;
+}
+.customers-link:is(:hover, :focus) {
+  border-color: var(--accent-color);
+}
+.customers-link:is(:hover, :focus) .customers-icon {
+  fill: var(--accent-color);
 }
 
 /** ------FOOTER------ */
